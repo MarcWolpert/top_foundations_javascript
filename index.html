@@ -99,7 +99,41 @@
         //using the template literals
         console.log(`${greeting_3}, ${name} with template literals`); //Hello, Chris
 
+        //Evaluating expressions in template literals
+        const song="Fight the Youth";
+        const score=9;
+        const highestScore=10;
+        const output=`I like the song ${song}. I gave it a score of ${score/highestScore*100}%.`;
+        console.log(output); 
+
+        //template literals respect the line breaks
+        const newline=`One day you finally knew
+what you had to do, and began,`;
+        console.log(newline);
+
+        //how to strings with newlines
+        const newline_2="One day you finall knew\nwhat you had to do, and began,";
+        console.log(newline_2);
+
+        //including quotes in strings
         
+        //Doesn't work
+        // const badQuotes="She said "I think so!""; 
+        //However, if you stack different types of string open/terminating characters you can
+        //use the other in the output
+        const goodQuotes1='She said "I think so!"';
+        const goodQuotes2="She said 'I think so!'";
+
+        console.log(goodQuotes1+"\n"+goodQuotes2);
+
+        //Escape characters: Differentiated by forward slash and not recognized as string
+        //moreso for string formatting
+        
+        const bigmouth = 'I\'ve got no right to take my place…';
+        console.log(bigmouth);
+
+
+
 
      </script>
 </body>
