@@ -51,5 +51,56 @@
         
 
      </script>
+
+    <!-- TOP Foundations: Data Types and Conditionals -->
+     <script>
+        console.log("\n\nData Types and Conditionals");
+        const string="The revolution will not be televised.";
+        console.log(string);
+
+        //Error'd strings
+        // const badString1 = This is a test;
+        // const badString2 = 'This is a test;
+        // const badString3 = This is a test';
+
+        const badString=string;
+        console.log(badString);
+
+        //Only terminating quotes that match the first are allowed
+        //"" and '' are the same thing but you should try to use the same one
+        //consistently throughtout your code
+
+        //HOWEVER, template literals are javascript embeddable, and allows over 
+        //multiple lines
+
+        const name="Chris";
+        const greeting=`Hello ${name}`;
+
+        console.log(greeting); // "Hello, Chris"
+        
+        const name_2="Jack";
+        const greeting_2=`Hello ${name_2}`;
+        console.log(greeting_2);
+
+        //joining two variables, ie "concatenation"
+        const one="Hello, ";
+        const two="how are you?";
+
+        const joined=`${one}${two}`;
+        console.log(joined);
+     </script>
+
+     <script>
+        //concatenation using the addition operator
+        const greeting_3="Hello";
+        const name_3="Chris";
+        console.log(greeting_3+", "+name_3); //Hello, Chris
+
+        //using the template literals
+        console.log(`${greeting_3}, ${name} with template literals`); //Hello, Chris
+
+        
+
+     </script>
 </body>
 </html>
