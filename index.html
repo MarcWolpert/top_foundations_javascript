@@ -128,10 +128,70 @@ what you had to do, and began,`;
 
         //Escape characters: Differentiated by forward slash and not recognized as string
         //moreso for string formatting
-        
+
         const bigmouth = 'I\'ve got no right to take my place…';
         console.log(bigmouth);
 
+        //Javascript does implicit casting of string+number to string+string
+        //surprisingly this works
+        const name_4 = "Front ";
+        const number = 242;
+        console.log(name_4 + number); // "Front 242"
+
+        //the Number() function explicit casts to a number if compatible
+        const myString = "123";
+        const myNum = Number(myString);
+        console.log(typeof myNum);
+
+        const myNum2 = 123;
+        const myString2 = String(myNum2);
+        console.log(typeof myString2);
+        // string
+
+        // String length
+        // String charAt()
+        // String charCodeAt()
+            //returns code of character at specified index
+        // String at()
+            //returns char at specified index
+        // String [ ]
+            //same as at()'sa\[]'
+        //Same as [:] in python
+            // String slice()
+            // String substring()
+            // String substr()
+
+        // String toUpperCase()
+        // String toLowerCase()
+        // String concat()
+        // String trim()
+            //gets rid of whitespace from both sides of a string
+        // String trimStart()
+            //gets rid of whitespace from start of string
+        // String trimEnd()
+            //gets rid of whitespace from end of string
+        
+        //Pads with a specified character until reached certain size
+        // String padStart()
+        // String padEnd()
+
+        // String repeat()
+            //returns a string with a number of copies of a string
+            let text="Hello ";
+            console.log(text.repeat(4));
+            //Hello Hello Hello Hello 
+        // String replace()
+            //searches for and replaces specified value within a string
+            //substring replacement
+            let text_2="Can Microsoft and Microsoft do it again?"
+            console.log(text_2.replace("Microsoft","Google"));
+            //with a regex we can replace all with the /g flag
+            console.log(text_2.replace(/Microsoft/g,"Google"));
+        // String replaceAll()
+            //kind of the same as replace() but specifies the regex instead of a string to look for
+        // String split()
+            //same as python
+            console.log(text_2.split(" "));
 
 
 
