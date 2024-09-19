@@ -193,6 +193,25 @@ what you had to do, and began,`;
             //same as python
             console.log(text_2.split(" "));
 
+        //IMPORTANT: toLocalLowerCase() is needed when not english, practically
+        //these are the same in my case here but not may not be generalized.
+        console.log("Καλημέρα".toLocaleLowerCase());
+        console.log("Καλημέρα".toLowerCase());
+
+        //A literal is a string primitive
+        //invoking the String constructor is coercing the string inside to be an object
+        let prim="yes"
+        let nonprim=new String("no");
+        console.log(typeof prim, typeof nonprim);
+
+        //valueOf() returns an object to the primitive type
+
+        //String comparison is iterative and goees by char codes
+        alert( 'Z' > 'A' ); // true
+        alert( 'Glow' > 'Glee' ); // true
+        alert( 'Bee' > 'Be' ); // true
+
+
 
 
      </script>
