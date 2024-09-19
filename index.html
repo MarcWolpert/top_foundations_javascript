@@ -207,13 +207,60 @@ what you had to do, and began,`;
         //valueOf() returns an object to the primitive type
 
         //String comparison is iterative and goees by char codes
-        alert( 'Z' > 'A' ); // true
-        alert( 'Glow' > 'Glee' ); // true
-        alert( 'Bee' > 'Be' ); // true
+        // alert( 'Z' > 'A' ); // true
+        // alert( 'Glow' > 'Glee' ); // true
+        // alert( 'Bee' > 'Be' ); // true
 
 
+         //when comparing strings of different types, javascript converts the 
+         //values to numbers
+         console.log('2'>1); //true, string '2' becomes a number 2
+        //DO NOT USE == ONLY USE === ITS MUCH SAFER
 
+        console.log(null===undefined);
+        console.log(null==undefined);
 
+        //if, else, else if, switch(expression): case: break;
+        //|| OR
+        //javascript has short circuiting with concatenated ||
+        //&& AND
+        //concatenated && finds first false value and short circuits
+        //! NOT
+        // !! converts a value to a boolean
+        //break statement gets out of a block
+        //default is a case but it runs if everything else didnt work
+        //TERNARY ?
+        //condition ? code to run if true : code to run if false
+
+        let x=false;
+        x ? console.log("X is true") : console.log("X is false");
+
+        //nested ? create a production and evaluate like a CFL
+
+        const re=/ab+c/
+        const re_object=new RegExp('wxy+z')
+
+        const alphabet='abcdefghijklmnopqrstuvwxyz'
+
+        //only gets the first instance of a search
+        console.log(re.exec(alphabet));
+        console.log(re_object.exec(alphabet))
+        
+        if (0){
+            console.log("0 is the truth.");
+        } else if (1){
+            console.log("1 is the truth.");
+        }
+        let somevar=true;
+        switch (somevar){
+            case true:
+                console.log(`somevar is ${somevar}`);
+                break;
+            default: 
+                break;
+        }
+
+        
      </script>
 </body>
 </html>
